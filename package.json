@@ -1,0 +1,11 @@
+{
+  "name": "@ligatrix/mcp-servers",
+  "version": "0.1.0",
+  "description": "MCP-style JSON-RPC examples for Ligatrix evidence and handoff workflows.",
+  "type": "module",
+  "scripts": {
+    "check": "node examples/test-evidence-server.mjs"
+  },
+  "license": "MIT"
+}
+
