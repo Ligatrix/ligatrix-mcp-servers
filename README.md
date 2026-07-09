@@ -1,14 +1,13 @@
 # Ligatrix MCP Servers
 
-Public MCP-style server examples for Ligatrix workflows.
+Tool-server examples for project notes and review checkpoints.
 
 These examples use JSON-RPC-shaped requests and responses without requiring a
-runtime dependency. They are safe public examples, not private production MCP
-servers.
+runtime dependency. They are public examples, not private production servers.
 
 ## Servers
 
-- `evidence-server.mjs` - creates evidence and handoff skeletons.
+- `evidence-server.mjs` - creates delivery-note and handoff skeletons.
 
 ## Check
 
@@ -19,4 +18,3 @@ npm run check
 ## Boundary
 
 The examples do not read private files, make network calls, or upload data.
-

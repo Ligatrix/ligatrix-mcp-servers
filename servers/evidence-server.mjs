@@ -4,7 +4,7 @@ import { createInterface } from "node:readline";
 const tools = [
   {
     name: "ligatrix.createEvidencePack",
-    description: "Create a generic evidence pack skeleton.",
+    description: "Create a generic delivery-note skeleton.",
     inputSchema: {
       type: "object",
       required: ["summary"],
@@ -16,7 +16,7 @@ const tools = [
   },
   {
     name: "ligatrix.createHandoff",
-    description: "Create a generic handoff skeleton.",
+    description: "Create a generic handoff-note skeleton.",
     inputSchema: {
       type: "object",
       required: ["title"],
@@ -93,4 +93,3 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     }
   });
 }
-

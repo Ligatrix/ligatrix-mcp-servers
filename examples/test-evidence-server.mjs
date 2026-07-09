@@ -10,16 +10,15 @@ const evidence = handleRequest({
   params: {
     name: "ligatrix.createEvidencePack",
     arguments: {
-      summary: "Public MCP-style evidence example",
+      summary: "Public delivery-note example",
       checks: [{ name: "example", result: "pass" }],
     },
   },
 });
 
 const text = evidence.result.content[0].text;
-if (!text.includes("Public MCP-style evidence example")) {
+if (!text.includes("Public delivery-note example")) {
   throw new Error("Evidence response missing summary.");
 }
 
 console.log(JSON.stringify({ list, evidence }, null, 2));
-
